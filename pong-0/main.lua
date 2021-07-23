@@ -21,3 +21,30 @@
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
 
+--[[
+    {}
+        We define our tables
+
+    Important functions:
+    - love.load()
+        Used for initializing our game state at the very beggining
+    - love.update(dt)
+        Called each frame by LOVE; dt will be elapsed time in seconds since the last frame
+    - love.draw()
+        Called each frame by LOVE after update for drawing things to the screen once they've changed
+    - love.graphics.printf(text, x, y, [width], [align])
+        Versatile print function that can align text left, right or center of the screen
+    - love.window.setMode(width, height, params)
+        Used to initilize the windows's dimensions and to set parameters like vsync
+]]
+
+--[[
+    Runs when the game first starts up, only once: used to initialize the game
+]]
+function love.load()
+    love.window.setMode(WINDOW_WIDTH, WINDOW_HEIGHT, {
+        fullscreen = false,
+        resizable = false,
+        vsync = true
+    })
+end
