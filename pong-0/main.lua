@@ -14,3 +14,10 @@
     resolution, though in widescreen (16:9) so it looks nicer on 
     modern systems.
 ]]
+
+--[[
+    We declare the window lenght and height
+]]
+WINDOW_WIDTH = 1280
+WINDOW_HEIGHT = 720
+
